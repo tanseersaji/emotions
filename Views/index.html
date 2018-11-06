@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <title>Emotions</title>
+</head>
+<body>
+
+    <div class="hide loadingText">
+        <p>Please wait while we pull the data from twitter servers.</p>
+    </div>
+
+    <div class="container wrapper">
+            <h1 style="text-align: center;">Emotions</h1>
+            <form action="/topic" method="post" id="tweetSearch">
+                <input type="text" name="topic" placeholder="Search a Topic">
+                <input type="submit" value="Search" class="button-primary">
+            </form>
+            <h2>How to get best results?</h2>
+            <p>
+                As of now, the Emotions AI can only read english text. With time…
+            </p>
+            <h2>How this works?</h2>
+            <p>
+                Emotions (web app), takes a search query and requests twitter for…
+            </p>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+        $('#tweetSearch').on("submit",(event) => {
+            $('.loadingText').removeClass('hide');
+            $('.loadingText').addClass('show');
+        });
+    </script>
+</body>
+</html>

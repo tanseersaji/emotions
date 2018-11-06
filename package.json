@@ -1,0 +1,22 @@
+{
+  "name": "emotions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Tanseer Saji",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jade": "^1.11.0",
+    "joi": "^14.0.0",
+    "sentiment": "^5.0.1",
+    "speakeasy-nlp": "^0.2.13",
+    "twitter": "^1.7.1"
+  }
+}
